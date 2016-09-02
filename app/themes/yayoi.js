@@ -2,8 +2,7 @@ import Color from 'color';
 
 import {Platform} from 'react-native';
 
-export default function() {
-  return {
+export default {
     brandPrimary : '#ff5917',
     brandInfo: '#ddd',
     brandSuccess: '#5cb85c',
@@ -11,8 +10,8 @@ export default function() {
     brandWarning: '#f0ad4e',
     brandSidebar: '#252932',
 
-    fontFamily: (Platform.OS === 'ios' ) ? 'HelveticaNeue' : 'Roboto',
-    btnFontFamily: (Platform.OS === 'ios' ) ? 'HelveticaNeue' : 'Roboto_medium',
+    fontFamily: 'HelveticaNeue',
+    btnFontFamily: 'HelveticaNeue',
     iconFamily: 'Ionicons',
 
     inverseTextColor: '#fff',
@@ -21,8 +20,8 @@ export default function() {
     subtitleColor: '#8e8e93',
 
     fontSizeBase: 15,
-    titleFontSize: (Platform.OS === 'ios' ) ? 17 : 19,
-    subTitleFontSize: (Platform.OS === 'ios' ) ? 12 : 14,
+    titleFontSize: 17,
+    subTitleFontSize: 12,
 
     inputFontSize: 15,
     inputLineHeight: 24,
@@ -37,8 +36,7 @@ export default function() {
         return this.fontSizeBase* 1.4;
     },
     get btnTextSize () {
-        return (Platform.OS==='ios') ? this.fontSizeBase* 1.1 :
-        this.fontSizeBase-1;
+        return this.fontSizeBase* 1.1;
     },
     get btnTextSizeLarge () {
         return this.fontSizeBase* 1.5;
@@ -55,14 +53,14 @@ export default function() {
 
     buttonPadding: 6,
 
-    borderRadiusBase: (Platform.OS === 'ios' ) ? 5 : 2,
+    borderRadiusBase: 5,
 
     get borderRadiusLarge () {
         return this.fontSizeBase* 3.8;
     },
 
     footerHeight: 55,
-    toolbarHeight: (Platform.OS === 'ios' ) ? 64 : 56,
+    toolbarHeight: 50,
     toolbarDefaultBg: '#ff5917',
     toolbarInverseBg: '#222',
 
@@ -80,7 +78,7 @@ export default function() {
         return Color(this.radioColor).darken(0.2).hexString();
     },
 
-    radioBtnSize: (Platform.OS === 'ios') ? 25 : 23,
+    radioBtnSize: 25,
 
     tabBgColor: '#F8F8F8',
     tabFontSize: 15,
@@ -160,15 +158,15 @@ export default function() {
     listNoteColor: '#808080',
     listNoteSize: 13,
 
-    iconFontSize: (Platform.OS === 'ios' ) ? 30 : 28,
+    iconFontSize: 30,
 
     badgeColor: '#fff',
     badgeBg: '#ED1727',
 
-    lineHeight: (Platform.OS === 'ios' ) ? 20 : 24,
-    iconLineHeight: (Platform.OS === 'ios' ) ? 37 : 30,
+    lineHeight: 20,
+    iconLineHeight: 37,
 
-    toolbarIconSize: (Platform.OS === 'ios' ) ? 20 : 22,
+    toolbarIconSize: 20,
 
     toolbarInputColor: '#CECDD2',
 
@@ -179,5 +177,4 @@ export default function() {
     inverseProgressColor: '#1A191B',
 
     grey : '#666'
-  }
 }

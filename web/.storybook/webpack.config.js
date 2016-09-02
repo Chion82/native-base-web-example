@@ -43,7 +43,8 @@ var config = {
   },
   resolve: {
     alias: {
-      'react-native': 'react-native-web-extended'
+      'react-native': 'react-native-web-extended',
+      'native-base' : 'native-base-web'
     }
   }
 };
