@@ -32,7 +32,7 @@ class IndexPage extends Component {
 					onPress={() => this.setState({tabIndex:0})}
 					iconColor={yayoiTheme.grey}
 					selectedIconColor={yayoiTheme.brandPrimary}>
-					<Text>Home Page</Text>
+					<Text onPress={() => this.props.navigator.push({index:999, title:"Custom Title"})}>Home Page</Text>
 				</Icon.TabBarItem>
 
 				<Icon.TabBarItem

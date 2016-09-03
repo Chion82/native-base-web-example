@@ -7,19 +7,29 @@ import IndexPage from '../pages/index';
 import AnatomyExample1 from '../pages/Anatomy-1';
 import AnatomyExample2 from '../pages/Anatomy-2';
 import BadgeExample from '../pages/Badge';
+import ButtonExample1 from '../pages/Button-1';
+import ButtonExample2 from '../pages/Button-2';
+import ButtonExample3 from '../pages/Button-3';
+
 
 function renderScene(route, navigator) {
   switch (route.index) {
     case 0:
-      return (<IndexPage />);
+      return (<IndexPage navigator={navigator} />);
     case 1:
       return (<AnatomyExample1 />);
     case 2:
       return (<AnatomyExample2 />);
     case 3:
       return (<BadgeExample />);
+    case 4:
+      return (<ButtonExample1 />);
+    case 5:
+      return (<ButtonExample2 />);
+    case 6:
+      return (<ButtonExample3 />);
     default:
-      return (<Text>Here is route {route.index}</Text>);
+      return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }
 }
 
