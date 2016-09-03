@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --port 3000 --config web/webpack.config.dev.js --inline --hot --colors --quiet",
+    "dev": "webpack-dev-server --host 0.0.0.0 --port 3000 --config web/webpack.config.dev.js --inline --hot --colors --quiet",
     "storybook": "start-storybook -p 9001 -c web/.storybook"
   },
   "keywords": [],
   "author": "Chion82",
   "license": "ISC",
   "dependencies": {
-    "react-native-web-extended": "^0.0.1",
+    "file-loader": "^0.9.0",
     "native-base-web": "^0.0.1",
     "react": "^15.1.0",
+    "react-native-web-extended": "0.0.2",
     "url-loader": "0.5.7"
   },
   "devDependencies": {
