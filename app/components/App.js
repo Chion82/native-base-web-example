@@ -5,6 +5,7 @@ import {
 } from 'react-native';
 import IndexPage from '../pages/index';
 import AnatomyExample1 from '../pages/Anatomy-1';
+import AnatomyExample2 from '../pages/Anatomy-2';
 
 function renderScene(route, navigator) {
   switch (route.index) {
@@ -12,6 +13,8 @@ function renderScene(route, navigator) {
       return (<IndexPage />);
     case 1:
       return (<AnatomyExample1 />);
+    case 2:
+      return (<AnatomyExample2 />);
     default:
       return (<Text>Here is route {route.index}</Text>);
   }
