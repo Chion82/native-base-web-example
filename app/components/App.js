@@ -6,6 +6,7 @@ import {
 import IndexPage from '../pages/index';
 import AnatomyExample1 from '../pages/Anatomy-1';
 import AnatomyExample2 from '../pages/Anatomy-2';
+import BadgeExample from '../pages/Badge';
 
 function renderScene(route, navigator) {
   switch (route.index) {
@@ -15,6 +16,8 @@ function renderScene(route, navigator) {
       return (<AnatomyExample1 />);
     case 2:
       return (<AnatomyExample2 />);
+    case 3:
+      return (<BadgeExample />);
     default:
       return (<Text>Here is route {route.index}</Text>);
   }
