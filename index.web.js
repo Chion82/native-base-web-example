@@ -6,8 +6,11 @@
 
 import { AppRegistry, Platform } from 'react-native';
 import App from './app/components/App';
+import { OSTheme } from 'native-base';
 
-Platform.OS = 'ios';
+if (Platform.OS === 'web') {
+  OSTheme.setOSTheme('ios');
+}
 
 AppRegistry.registerComponent('App', () => App);
 AppRegistry.runApplication('App', {

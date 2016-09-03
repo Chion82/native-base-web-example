@@ -10,6 +10,7 @@ import BadgeExample from '../pages/Badge';
 import ButtonExample1 from '../pages/Button-1';
 import ButtonExample2 from '../pages/Button-2';
 import ButtonExample3 from '../pages/Button-3';
+import ButtonExample4 from '../pages/Button-4';
 
 
 function renderScene(route, navigator) {
@@ -28,6 +29,8 @@ function renderScene(route, navigator) {
       return (<ButtonExample2 />);
     case 6:
       return (<ButtonExample3 />);
+    case 7:
+      return (<ButtonExample4 />);
     default:
       return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }
