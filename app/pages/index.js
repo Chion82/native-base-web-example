@@ -26,7 +26,7 @@ class IndexPage extends Component {
 				unselectedTintColor={yayoiTheme.grey}>
 
 				<Icon.TabBarItem
-					title="Home"
+					title="Demo"
 					iconName="ios-home-outline"
 					selectedIconName="ios-home"
 					selected={this.state.tabIndex===0}
@@ -39,25 +39,25 @@ class IndexPage extends Component {
 				</Icon.TabBarItem>
 
 				<Icon.TabBarItem
-					title="Calendar"
-					iconName="ios-calendar-outline"
-					selectedIconName="ios-calendar"
+					title="Updates"
+					iconName="social-rss-outline"
+					selectedIconName="social-rss"
 					selected={this.state.tabIndex===2}
 					onPress={() => this.setState({tabIndex:2})}
 					iconColor={yayoiTheme.grey}
 					selectedIconColor={yayoiTheme.brandPrimary}>
-					<Text>Calendar Page</Text>
+					<Text>Updates Page</Text>
 				</Icon.TabBarItem>
 
 				<Icon.TabBarItem
-					title="Me"
-					iconName="ios-person-outline"
-					selectedIconName="ios-person"
+					title="About"
+					iconName="ios-informatoutline"
+					selectedIconName="ios-information"
 					selected={this.state.tabIndex===3}
 					onPress={() => this.setState({tabIndex:3})}
 					iconColor={yayoiTheme.grey}
 					selectedIconColor={yayoiTheme.brandPrimary}>
-					<Text>My Page</Text>
+					<Text>About Page</Text>
 				</Icon.TabBarItem>
 
 			</TabBarIOS>

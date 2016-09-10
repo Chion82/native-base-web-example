@@ -82,6 +82,12 @@ export default class ComponentList extends Component {
             <ListItem menuItem onPress={this.navigateTo.bind(this, 15)} hideBorder>
               <Text>Overview</Text>
             </ListItem>
+            <ListItem itemDivider>
+              <Text>Layout</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 16)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
           </List>
         </Content>
       </Container>
