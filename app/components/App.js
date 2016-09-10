@@ -16,6 +16,9 @@ import CardExample2 from '../pages/Card-2';
 import CardExample3 from '../pages/Card-3';
 import CardExample4 from '../pages/Card-4';
 import CardExample5 from '../pages/Card-5';
+import CheckBoxExample from '../pages/CheckBox';
+import FormExample from '../pages/Form';
+import InputGroupExample from '../pages/InputGroup';
 
 
 function renderScene(route, navigator) {
@@ -46,6 +49,12 @@ function renderScene(route, navigator) {
       return (<CardExample4 />);
     case 12:
       return (<CardExample5 />);
+    case 13:
+      return (<CheckBoxExample />);
+    case 14:
+      return (<FormExample />);
+    case 15:
+      return (<InputGroupExample />);
     default:
       return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }
