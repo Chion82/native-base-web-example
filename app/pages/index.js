@@ -8,6 +8,7 @@ import {
 	View
 } from 'react-native';
 import yayoiTheme from '../themes/yayoi';
+import ComponentList from '../components/ComponentList';
 
 class IndexPage extends Component {
 
@@ -32,18 +33,9 @@ class IndexPage extends Component {
 					onPress={() => this.setState({tabIndex:0})}
 					iconColor={yayoiTheme.grey}
 					selectedIconColor={yayoiTheme.brandPrimary}>
-					<Text onPress={() => this.props.navigator.push({index:999, title:"Custom Title"})}>Home Page</Text>
-				</Icon.TabBarItem>
 
-				<Icon.TabBarItem
-					title="Contacts"
-					iconName="ios-people-outline"
-					selectedIconName="ios-people"
-					selected={this.state.tabIndex===1}
-					onPress={() => this.setState({tabIndex:1})}
-					iconColor={yayoiTheme.grey}
-					selectedIconColor={yayoiTheme.brandPrimary}>
-					<Text>Contacts Page</Text>
+          <ComponentList navigator={this.props.navigator} />
+
 				</Icon.TabBarItem>
 
 				<Icon.TabBarItem

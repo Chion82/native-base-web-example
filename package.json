@@ -11,6 +11,7 @@
   "author": "Chion82",
   "license": "ISC",
   "dependencies": {
+    "color": "^0.11.3",
     "file-loader": "^0.9.0",
     "native-base-web": "0.0.3-beta.2",
     "react": "^15.1.0",

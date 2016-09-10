@@ -11,6 +11,11 @@ import ButtonExample1 from '../pages/Button-1';
 import ButtonExample2 from '../pages/Button-2';
 import ButtonExample3 from '../pages/Button-3';
 import ButtonExample4 from '../pages/Button-4';
+import CardExample1 from '../pages/Card-1';
+import CardExample2 from '../pages/Card-2';
+import CardExample3 from '../pages/Card-3';
+import CardExample4 from '../pages/Card-4';
+import CardExample5 from '../pages/Card-5';
 
 
 function renderScene(route, navigator) {
@@ -31,6 +36,16 @@ function renderScene(route, navigator) {
       return (<ButtonExample3 />);
     case 7:
       return (<ButtonExample4 />);
+    case 8:
+      return (<CardExample1 />);
+    case 9:
+      return (<CardExample2 />);
+    case 10:
+      return (<CardExample3 />);
+    case 11:
+      return (<CardExample4 />);
+    case 12:
+      return (<CardExample5 />);
     default:
       return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }
