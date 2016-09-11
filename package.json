@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --host 0.0.0.0 --port 3000 --config web/webpack.config.dev.js --inline --hot --colors --quiet",
-    "storybook": "start-storybook -p 9001 -c web/.storybook"
+    "storybook": "start-storybook -p 9001 -c web/.storybook",
+    "build": "rm -rf dist && webpack --config web/webpack.config.prod.js --progress && cp -r web/src/* dist/"
   },
   "keywords": [],
   "author": "Chion82",
