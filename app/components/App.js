@@ -20,6 +20,14 @@ import CheckBoxExample from '../pages/CheckBox';
 import FormExample from '../pages/Form';
 import InputGroupExample from '../pages/InputGroup';
 import LayoutExample from '../pages/Layout';
+import ListExample1 from '../pages/List-1';
+import ListExample2 from '../pages/List-2';
+import ListExample3 from '../pages/List-3';
+import ListExample4 from '../pages/List-4';
+import ListExample5 from '../pages/List-5';
+import ListExample6 from '../pages/List-6';
+import ListExample7 from '../pages/List-7';
+
 
 function renderScene(route, navigator) {
   switch (route.index) {
@@ -57,6 +65,20 @@ function renderScene(route, navigator) {
       return (<InputGroupExample />);
     case 16:
       return (<LayoutExample />);
+    case 17:
+      return (<ListExample1 />);
+    case 18:
+      return (<ListExample2 />);
+    case 19:
+      return (<ListExample3 />);
+    case 20:
+      return (<ListExample4 />);
+    case 21:
+      return (<ListExample5 />);
+    case 22:
+      return (<ListExample6 />);
+    case 23:
+      return (<ListExample7 />);
     default:
       return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }

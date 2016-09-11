@@ -6,7 +6,7 @@ export default class LayoutExample extends Component {
     return (
       <Container>
 				<Header>
-					<Title>Card</Title>
+					<Title>Layout</Title>
 				</Header>
         <Content>
           <Grid>
