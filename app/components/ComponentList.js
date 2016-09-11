@@ -112,6 +112,36 @@ export default class ComponentList extends Component {
             <ListItem menuItem onPress={this.navigateTo.bind(this, 23)} hideBorder>
               <Text>List Menu Item</Text>
             </ListItem>
+            <ListItem itemDivider>
+              <Text>Radio Button</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 24)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
+            <ListItem itemDivider>
+              <Text>Search Bar</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 25)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
+            <ListItem itemDivider>
+              <Text>Spinner</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 26)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
+            <ListItem itemDivider>
+              <Text>Tabs</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 27)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
+            <ListItem itemDivider>
+              <Text>Thumbnail</Text>
+            </ListItem>
+            <ListItem menuItem onPress={this.navigateTo.bind(this, 28)} hideBorder>
+              <Text>Overview</Text>
+            </ListItem>
           </List>
         </Content>
       </Container>

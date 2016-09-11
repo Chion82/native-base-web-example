@@ -27,7 +27,11 @@ import ListExample4 from '../pages/List-4';
 import ListExample5 from '../pages/List-5';
 import ListExample6 from '../pages/List-6';
 import ListExample7 from '../pages/List-7';
-
+import RadioButtonExample from '../pages/RadioButton';
+import SearchBarExample from '../pages/SearchBar';
+import SpinnerExample from '../pages/Spinner';
+import TabsExample from '../pages/Tabs';
+import ThumbnailExample from '../pages/Thumbnail';
 
 function renderScene(route, navigator) {
   switch (route.index) {
@@ -79,6 +83,16 @@ function renderScene(route, navigator) {
       return (<ListExample6 />);
     case 23:
       return (<ListExample7 />);
+    case 24:
+      return (<RadioButtonExample />);
+    case 25:
+      return (<SearchBarExample />);
+    case 26:
+      return (<SpinnerExample />);
+    case 27:
+      return (<TabsExample />);
+    case 28:
+      return (<ThumbnailExample />);
     default:
       return (<Text onPress={() => navigator.pop()}>Here is route {route.index}, title is {route.title}</Text>);
   }
